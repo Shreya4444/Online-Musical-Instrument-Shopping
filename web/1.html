@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>
+Homepage
+</title>
+<style>
+body
+ {
+ background-size:100% 100%; 
+}
+h2 
+{
+font-family:cursive;
+font-size:50px;
+}
+#foh
+{
+font-family:Times New roman;
+background-color:green;
+color:mistyrose;
+top:10px;
+}
+a
+{
+color:black;
+text-decoration:none;
+}
+a:hover
+{
+color:crimson;
+}
+#idd1
+{
+top:10px;
+left:1000px;
+position:absolute;
+font-size:20px;
+}
+#idd2
+{
+top:10px;
+left:1100px;
+position:absolute;
+font-size:20px;
+}
+#d1 
+{
+    width: 175px;
+    height: 75px;
+    background-color: aqua;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#d2
+{
+    width: 175px;
+    height: 75px;
+    background-color: orange;
+    box-shadow: 10px 10px 5px #888888;
+}
+#d3
+{
+    width: 175px;
+    height: 75px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px #888888;
+}
+#d4
+{
+    width: 300px;
+    height: 75px;
+    background-color: orchid;
+    box-shadow: 10px 10px 5px #888888;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+var images = ['musical-notes-238025.jpg','musical-treat-225140.jpg','musical-instruments-20a.jpg','musical-instruments-10v.jpg'];
+var i = 0;
+
+setInterval(function(){
+    $('body').css('background-image', function() {
+        if (i >= images.length) {
+            i=0;
+        }
+        return 'url(' + images[i++] + ')'; 
+    });
+}, 2000)
+</script>
+</head>
+<body>
+<div id="foh">
+<h1><u><i><marquee direction="right">Welcome to the Online Musical Instruments Shopping</h1></i></u></marquee></div></u>
+<h2>
+<div id="d1">
+<a href="2.html">Guitars</a></div>
+<br>
+<div id="d2"><a href="8.html">Violin</a></div>
+<br>
+<div id="d3">
+<a href="3.html">Piano</div></a>
+</div>
+<br>
+<div id="d4"> <a href="4.html">Percussion</a>
+</div>
+<br>
+</h2>
+<button id="idd1">Log In</button>
+<button id="idd2">Sign up</button>
+</body>
+</html>
